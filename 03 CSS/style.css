@@ -1,0 +1,210 @@
+body {
+    background: linear-gradient(rgb(233, 143, 224), rgb(236, 238, 177));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: rgb(39, 39, 41);
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 32px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.animal-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 16px;
+    padding: 20px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    width: 600px;
+    max-width: 100%;
+}
+.card-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card {
+    min-width: 220px;
+}
+.animal-row ul {
+    margin: 0;
+    padding-left: 24px;
+    list-style: none;
+}
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.list-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Animated button styles */
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: rgb(228, 8, 232);
+    box-shadow: 0 0 0 2px rgb(232, 15, 214);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: rgb(230, 5, 215);
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animated-button .arr-1 { right: 16px; }
+.animated-button .arr-2 { left: -25%; }
+.animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(204, 7, 239);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+}
+.animated-button:hover .arr-1 { right: -25%; }
+.animated-button:hover .arr-2 { left: 16px; }
+.animated-button:hover .text { transform: translateX(12px); }
+.animated-button:hover svg { fill: #212121; }
+.animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px rgb(207, 4, 243);
+}
+.animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}
+
+/* Card1 styles */
+.card1 {
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 320px;
+    border-radius: 2rem;
+    background-color: rgb(225, 210, 107);
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.card1 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.card1 .title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.card1 .price {
+    background: #fff;
+    color: #a100a1;
+    padding: 0.2em 0.8em;
+    border-radius: 1em;
+    font-weight: bold;
+    font-size: 1em;
+}
+.card1 .desc {
+    margin-bottom: 1rem;
+    color: #333;
+}
+.card1 .lists {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+.card1 .list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+.card1 .list svg {
+    width: 20px;
+    height: 20px;
+    color: #a100a1;
+}
+.card1 .list:last-child {
+    margin-bottom: 0;
+}
+.card1 .button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #a100a1;
+    color: #fff;
+    border: none;
+    border-radius: 1.5em;
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.card1 .button svg {
+    width: 24px;
+    height: 16px;
+    fill: #fff;
+}
+.card1 .button:hover {
+    background: #e600e6;
+}
+
+/* To top link */
+.to-top-link {
+    display: block;
+    margin: 32px auto 0 auto;
+    color: #a100a1;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-align: center;
+    transition: color 0.2s;
+}
+.to-top-link:hover {
+    color: #e600e6;
+    text-decoration: underline;
+}
