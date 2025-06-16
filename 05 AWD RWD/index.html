@@ -1,39 +1,262 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Flex Tour</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling with us</title>
+    <link rel="stylesheet" href="styles.css">
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Daria Cherevach</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">11600.0000000000</mso:Order>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Daria Cherevach</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:ContentTypeId msdt:dt="string">0x0101003F473B5EEE07304FB97630F1862F3204</mso:ContentTypeId>
+<mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+<mso:MediaLengthInSeconds msdt:dt="string"></mso:MediaLengthInSeconds>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
 </head>
+
 <body>
+    <header class="header">
+        <h1 class="header__title">Traveling with us</h1>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="#about" class="header__nav-link">About</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#plan_tour" class="header__nav-link">Plan a tour</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#order_tour" class="header__nav-link">Order Tour</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#experience" class="header__nav-link">Experiences</a>
+                </li>
 
-  <header>
-    <nav class="header_nav">
-      <a href="#" class="header_nav-link">About</a>
-      <a href="#" class="header_nav-link">Plan a tour</a>
-      <a href="#" class="header_nav-link">Experiences</a>
-    </nav>
-  </header>
+            </ul>
+        </nav>
+    </header>
 
-  <div class="sections-row">
-    <section class="plan-section">
-      <h2>Плануй тур</h2>
-      <div class="tour-card">
-        <img src="./img/tour1.jpg" alt="Тур 1" class="tour-card_image">
-        <button class="button-buy">Buy Tour</button>
-        <button class="button-info">More Info</button>
-      </div>
-    </section>
+    <main class="main">
 
-    <section class="experiences-section">
-      <h2>Досвід</h2>
-      <div class="tour-card">
-        <img src="./img/tour2.jpg" alt="Тур 2" class="tour-card_image">
-        <button class="button-buy">Buy Tour</button>
-        <button class="button-secondary">More Info</button>
-      </div>
-    </section>
-  </div>
+        <section class="section section-1" id="about">
+            <div class="section__content">
+                <div class="section__text">
+                    <h2 class="section__title"> We help discover amazing destinations for you</h2>
+                    <ul class="section__list">
+                        <li>Experience diverse cultures and traditions</li>
+                        <li>Visit world-renowned landmarks and natural wonders</li>
+                        <li>Explore hidden gems off the beaten path</li>
+                        <li>Immerse yourself in local cuisines and flavors</li>
+                        <li>Create unforgettable memories with loved ones</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section section-2" id="plan_tour">
+            <div class="section__content">
+                <div class="section__text">
+                    <h2 class="section__title">Plan Your Perfect Trip</h2>
+                    <ul class="section__list">
+                        <li>
+                            Get personalized recommendations based on your preferences
+                        </li>
+                        <li>Compare prices and find the best deals</li>
+                        <li>Book flights, accommodations, and activities seamlessly</li>
+                        <li>Stay organized with itineraries and travel documents</li>
+                        <li>Enjoy peace of mind with 24/7 customer support</li>
+                    </ul>
+                </div>
+                <button class="section__button section__button-2">Plan a tour</button>
+            </div>
+        </section>
+        <section class="tour-cards" id="order_tour">
+            <div class="tour-card">
 
+                <img src="bali.jpg" alt="Mystical Bali Adventure" class="tour-card__image">
+
+                <h3 class="tour-card__title">Mystical Bali Adventure</h3>
+                <p class="tour-card__description">
+                    Explore the enchanting island of Bali, with its lush jungles, vibrant culture, and ancient temples. Visit the iconic Tanah Lot temple, hike to the summit of Mount Batur, and unwind on the pristine beaches of Nusa Dua.
+                </p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button-buy">
+              Buy Tour
+            </button>
+                    <button class="tour-card__button tour-card__button-info">
+              More Info
+            </button>
+                </div>
+            </div>
+
+
+
+            <div class="tour-card">
+                <img src="tokyo.jpg" alt="Futuristic Tokyo Odyssey" class="tour-card__image">
+                <h3 class="tour-card__title">Futuristic Tokyo Odyssey</h3>
+                <p class="tour-card__description">
+                    Discover the captivating blend of tradition and innovation in Tokyo. Experience the city's bustling streets and neon-lit nights, visit ancient temples and shrines, and savor the exquisite flavors of Japanese cuisine.
+                </p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button-buy">
+              Buy Tour
+            </button>
+                    <button class="tour-card__button tour-card__button-info">
+              More Info
+            </button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="African_safari.jpg" alt="Majestic African Safari" class="tour-card__image">
+                <h3 class="tour-card__title">Majestic African Safari</h3>
+                <p class="tour-card__description">
+                    Embark on a thrilling journey through the African wilderness, where you'll encounter diverse wildlife, breathtaking landscapes, and vibrant cultures. Discover the untamed beauty of the African savanna.
+                </p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button-buy">
+            Buy Tour
+          </button>
+                    <button class="tour-card__button tour-card__button-info">
+            More Info
+          </button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="Rio_Carnival.jpg" alt="Vibrant Rio de Janeiro Carnival" class="tour-card__image">
+                <h3 class="tour-card__title">Vibrant Rio de Janeiro Carnival</h3>
+                <p class="tour-card__description">
+                    Experience the energy and excitement of Rio de Janeiro's world-famous Carnival, where colorful parades, pulsating samba rhythms, and lively street parties come together in a dazzling celebration of life.
+                </p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button-buy">
+  Buy Tour
+</button>
+                    <button class="tour-card__button tour-card__button-info">
+  More Info
+</button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="Alaska.jpg" alt="Alaskan Wilderness Expedition" class="tour-card__image">
+                <h3 class="tour-card__title">Alaskan Wilderness Expedition</h3>
+                <p class="tour-card__description">
+                    Immerse yourself in the rugged beauty of Alaska, a land of towering mountains, pristine glaciers, and lush forests. Explore untouched wilderness, witness awe-inspiring wildlife, and experience unforgettable adventures.
+                </p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button-buy">
+          Buy Tour
+        </button>
+                    <button class="tour-card__button tour-card__button-info">
+          More Info
+        </button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="Egypt_pyramids.jpg" alt="Enigmatic Egyptian Odyssey" class="tour-card__image">
+                <h3 class="tour-card__title">Enigmatic Egyptian Odyssey</h3>
+                <p class="tour-card__description">
+                    Uncover the mysteries of ancient Egypt, from the iconic pyramids and Sphinx to the bustling markets and vibrant cities along the Nile River. Delve into the history, art, and culture that have captivated the world for millennia.
+                </p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button-buy">
+        Buy Tour
+      </button>
+                    <button class="tour-card__button tour-card__button-info">
+        More Info
+      </button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="Machu_Picchu.jpg" alt="Mystical Machu Picchu Trek" class="tour-card__image">
+                <h3 class="tour-card__title">Mystical Machu Picchu Trek</h3>
+                <p class="tour-card__description">
+                    Venture deep into the heart of the Andes, where you'll uncover the ancient secrets of Machu Picchu, the lost city of the Incas. Hike through breathtaking landscapes and immerse yourself in the rich history and culture of Peru.
+                </p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button-buy">
+      Buy Tour
+    </button>
+                    <button class="tour-card__button tour-card__button-info">
+      More Info
+    </button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="New_Zealand.jpg" alt="Scenic New Zealand Adventure" class="tour-card__image">
+                <h3 class="tour-card__title">Scenic New Zealand Adventure</h3>
+                <p class="tour-card__description">
+                    Traverse the stunning landscapes of New Zealand, from the lush rainforests and pristine beaches to the dramatic mountains and glaciers. Experience the adventure and natural beauty that make this destination truly unique.
+                </p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button-buy">
+    Buy Tour
+  </button>
+                    <button class="tour-card__button tour-card__button-info">
+    More Info
+  </button>
+                </div>
+            </div>
+
+            <!-- <div class="tour-card">
+                <img src="paris.jpg" alt="Romantic Paris Escape" class="tour-card__image">
+                <h3 class="tour-card__title">Romantic Paris Escape</h3>
+                <p class="tour-card__description">
+                    Immerse yourself in the beauty and charm of the City of Love. Stroll along the Seine, marvel at the architectural masterpiece of the Eiffel Tower, and indulge in the world-famous French cuisine at charming cafés and bistros.
+                </p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button-buy">
+              Buy Tour
+            </button>
+                    <button class="tour-card__button tour-card__button-info">
+              More Info
+            </button>
+                </div>
+            </div> -->
+
+        </section>
+
+        <section class="section section-3" id="experience">
+            <div class="section__content">
+                <div class="section__text">
+                    <h2 class="section__title">Share Your Experiences</h2>
+                    <ul class="section__list">
+                        <li>Connect with fellow travelers around the world</li>
+                        <li>Share your stories, tips, and recommendations</li>
+                        <li>Upload photos and videos of your adventures</li>
+                        <li>Participate in forums and discussions</li>
+                        <li>Inspire others to embark on their own journeys</li>
+                    </ul>
+                </div>
+                <button class="section__button section__button-3">Share</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+            Traveling with us &copy; 2023. All Rights Reserved.
+        </p>
+    </footer>
 </body>
+
 </html>
