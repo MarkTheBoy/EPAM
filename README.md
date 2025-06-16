@@ -7,4 +7,5 @@
 ![image](https://github.com/user-attachments/assets/49bdde9b-b809-4ba6-be4e-b8631dce6dd5)
 05 AWD RWD
 ![image](https://github.com/user-attachments/assets/877245a8-18ee-4c72-8331-a89146572152)
-
+06 07 JS BASICS OBJECTS FUNCTIONS
+![image](https://github.com/user-attachments/assets/242ad4de-69e2-4d1e-9c6b-f467f0baf10c)
